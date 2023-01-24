@@ -1,0 +1,15 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
+public class ReajusteService {
+	
+	private List<ValidacaoReajuste> validacoes;
+
+	public void reajustarSalarioDoFuncionario(Funcionario funcionario, BigDecimal aumento) {
+		
+		
+		BigDecimal salarioReajustado = salarioAtual.add(aumento);
+		
+		funcionario.atualizarSalario(salarioReajustado);
+	}
+}
